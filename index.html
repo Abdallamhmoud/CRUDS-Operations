@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/css.css">
+</head>
+<body>
+
+    <div class="w-75 mx-auto py-4">
+        <h3 class="py-3 text-center">Product Management System</h3>
+
+        <label for="productName" class="" >product name :</label>
+        <input type="text" id="productName" class="form-control  mb-2">
+
+        <label for="productPrice">product price :</label>
+        <input type="number" id="productPrice" class="form-control mb-2">
+
+        <label for="productCategory">product category :</label>
+        <input type="text" id="productCategory" class="form-control mb-2">
+
+        <label for="productQuality">product quality :</label>
+        <textarea type="text" id="productQuality" class="form-control mb-2"></textarea>
+
+        <button id="addBtn" type="text" onclick="addProducts()" class="btn btn-outline-info">ADD</button>
+
+    </div>
+
+    <div class="w-75 mx-auto p-4">
+        <label for="srch">Search :</label>
+        <input id="srchBtn" oninput="searchProducts(this.value)" type="text" class="form-control" placeholder="search by name" id="srch">
+    </div>
+
+    <table class="table w-75 mx-auto">
+        <thead class="">
+                <th>index</th>
+                <th>product name</th>
+                <th>product price</th>
+                <th>product category</th>
+                <th>product quality</th>
+                <th>update</th>
+                <th>delete</th>
+        </thead>
+        <tbody id="tableData">
+
+        </tbody>
+    </table>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
